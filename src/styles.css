@@ -1,0 +1,134 @@
+@font-face {
+  font-family: skranji;
+  src: url(./Skranji-Regular.ttf);
+}
+@font-face {
+  font-family: skranji-bold;
+  src: url(./Skranji-Bold.ttf);
+}
+
+body{
+  background-image: url(./foodPattern.jpg);
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fffbc0;
+  display: flex;
+  max-height: 50px;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+header > h1{
+  min-width: 250px;
+  margin-left: 10px;
+}
+
+.title{
+  font-family: skranji-bold;
+  text-shadow: 1px 1px 1px black;
+}
+.red{
+  color: red;
+}
+.yellow{
+  color: yellow;
+}
+
+nav{
+  max-width: 100ch;
+  display: flex;
+  padding-right: 2em;
+}
+nav > ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 20em;
+  padding: 0.4em 1em ;
+}
+
+
+.btn:hover {
+  background-color: #fbf68c;
+  border-bottom: 2px solid red;
+}
+
+.btn{
+  height: 2.5em;
+  width: 10em;
+  font-family:skranji;
+  font-size: 1.1em;
+  background-color: #fffbc0;
+  border: 0;
+  filter: drop-shadow(1px 1px 1px grey);
+}
+
+.navbtn {
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 2px solid darkgray;
+  border-right: 0;
+  filter: drop-shadow(0px 0px 0px);
+}
+#content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  background-color: #fffbd4;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0;
+  width: 60%;
+  min-height: 100vh;
+  padding: 2em;
+}
+
+/*HOME css*/
+#title{
+  margin-bottom: 0;
+}
+#n1food{
+  margin-top: 0;
+  font-style: italic;
+  text-shadow: 1px 1px 1px grey;
+}
+
+#imgcontainer {
+  display: flex;
+}
+
+.image {
+  width: auto;
+  height: 200px;
+  margin: 1em;
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+/*MENU css*/
+.card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr;
+}
+#foodname{
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+#menupage {
+  background-color: white;
+  padding: 2em;
+}
+#priceList {
+  list-style: none;
+}
